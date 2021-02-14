@@ -6,6 +6,8 @@ Scientists from Improbable Beef(TM) are investigating bacteria from the human be
 
 
 ## Webpage Use
+
+![Belly Button Biodiversity Webpage](https://jayjohnson526.github.io/)
 Use the drop down menu on the left to select the volunteer ID.  
 ![](images/dropdown_menu.png)
 
