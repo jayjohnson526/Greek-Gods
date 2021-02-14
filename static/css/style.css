@@ -1,0 +1,10 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.jumbotron {
+    background-image: url("https://www.mbl.edu/jbpc/files/2016/01/TiledHedgehogs.jpg");
+    background-size: 150%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}

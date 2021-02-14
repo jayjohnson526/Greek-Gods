@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Greek gods</title>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
+
 <body>
-    <div id="plot"></div>
-    <script src="data.js"></script>
-    <script src="plots.js"></script>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1 style="color: white">Belly Button Biodiversity Dashboard</h1>
+        <p style="color: white">Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="well" style="color: white; background-color: black;">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)" style="color: darkmagenta;"></select>
+        </div>
+        <div class="panel panel-primary" style="border-color: black">
+          <div class="panel-heading" style="background-color: black;">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <p>Have you ever wondered where meat substitutes like Improbable Beef™ get their meaty flavor, even though they’re made entirely of non-animal products?  The answer – bacteria! These useful little organisms can synthesize proteins that taste like meat, and the right combination can be used in food production to trick your tastebuds. Not all bacteria are alike, however. Different types of bacteria produce different proteins, and not all will have an appealing flavor.<br> <br>Scientists at Improbable Beef™ are working to find bacteria species that will improve their secret recipe. They’ve analyzed proteins from bacteria in algae, fungi, and plant roots, but the flavors weren’t quite right. They suspect that the human body may contain just the bacteria they’re looking for.<br> <br>There are thousands of different types of bacteria found on the human body and they vary by location. For this project, scientists are interested in looking at the skin microbiome, particularly the bellybutton. Below are data collected from the bellybuttons of hundreds of individuals. Volunteers can select their ID from the drop-down menu to view the results of their bellybutton analyses. If you’ve got the right composition, you may be the source of the next secret ingredient in the Improbable Beef™ recipe.<br> <br> <br></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="bar"></div>
+        <script src="charts.js"></script>
+      </div>
+      <div class="col-md-6">
+        <div id="gauge"></div>
+        <script src="charts.js"></script>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+        <script src="charts.js"></script>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="samples.json"></script>
+  <script src="charts.js"></script>
+
 </body>
+
 </html>
