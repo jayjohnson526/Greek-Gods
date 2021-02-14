@@ -7,10 +7,10 @@ Scientists from Improbable Beef(TM) are investigating bacteria from the human be
 
 ## Webpage Use
 
-![Belly Button Biodiversity Webpage](https://jayjohnson526.github.io/)
+[Belly Button Biodiversity Webpage](https://jayjohnson526.github.io/)
 
 Use the drop down menu on the left to select the volunteer ID.  
-[](images/dropdown_menu.png)
+![](images/dropdown_menu.png)
 
 The results for the top ten bacterial cultures that were detected, a bubble chart displaying the frequency of each bacteria type, and the belly button wash frequency will automatically load. 
 
